@@ -1,0 +1,53 @@
+package com.chainsys.jdbc.JDBC;
+
+import java.io.FileInputStream;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+
+public class JDBC {
+   public static void main(String[] args) {
+//	   sambleJDBC();
+	   imageJDBC();
+   }
+   public static void sambleJDBC() {
+    try {
+           Connection con  = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe","system","oracle"); 
+           java.sql.Statement stat = con.createStatement();
+           ResultSet rs  = stat.executeQuery("select * from employees");
+           while(rs.next()) {
+               System.out.println(rs.getString("last_name") + ", " +rs.getString("first_name"));
+           }
+           con.close();
+       }catch(Exception err) {
+           err.printStackTrace();
+       }
+}
+   
+   public static void imageJDBC()
+   {
+   try{  
+       Class.forName("oracle.jdbc.driver.OracleDriver");  
+       Connection con=DriverManager.getConnection(  
+       "jdbc:oracle:thin:@localhost:1521:xe","system","oracle");  
+                     
+       PreparedStatement ps=con.prepareStatement("insert into friend values(?,?)");  
+       ps.setString(1,"3114");  
+         
+       FileInputStream fin=new FileInputStream("D:\\picture\\3114.jpg");  
+       ps.setBinaryStream(2,fin,fin.available());  
+       int i=ps.executeUpdate();  
+       System.out.println(i+" records affected");  
+                 
+       con.close(); 
+       }
+   catch (Exception e) 
+   {
+    	   e.printStackTrace();
+//	   System.out.println("ERROR!!!"+e.getMessage());
+    	   }  
+       }  
+   
+   }

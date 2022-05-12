@@ -1,0 +1,70 @@
+package com.chainsys.input_output_stream;
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+
+import com.chainsys.cllection.Emp;
+
+public class ReadObj
+{
+    /*public static void main(String arg[])throws Exception
+    {
+         FileInputStream fis = new FileInputStream("D:\\Methods\\Ayyanar3114NewFile") ;
+         ObjectInputStream ois = new ObjectInputStream(fis) ;
+          Emp ob =null;
+         try
+        {
+            ob = (Emp) ois.readObject();
+        }
+        catch(Exception e)
+        {
+            System.out.println("Exception during deserialization: " +e);
+        }
+        finally
+        {
+            try
+            {
+                ois.close();
+            }
+            catch(Exception e)
+            {
+                System.out.println("Exception during ois close: " + e);
+            }
+        }
+        if(null!=ob)
+        {
+            ob.print() ;
+            System.out.println("HashCode "+ob.hashCode());            
+        }
+    }*/
+	
+	public static void main(String args[]) throws IOException {
+		FileInputStream in = null;
+	      FileOutputStream out = null;
+
+	      try {
+	         in = new FileInputStream("D:\\Methods\\Ayyanar3114NewFile");
+	         out = new FileOutputStream("D:\\Methods\\AyyanarFile");
+	         
+	         int c;
+	         while ((c = in.read()) != -1) {
+	            out.write(c);
+	         }
+	      }
+	      catch(IOException e) {
+	    	  System.out.println("ERROR!!!"+e.getMessage());
+	      }
+	      finally {
+	         if (in != null) {
+	            in.close();
+	         }
+	         if (out != null) {
+	            out.close();
+	         }
+	      }
+	   }
+}
+
+
