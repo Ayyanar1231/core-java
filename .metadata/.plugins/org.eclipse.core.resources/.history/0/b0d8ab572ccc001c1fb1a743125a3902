@@ -1,5 +1,0 @@
-package com.chainsys.input_output_stream;
-
-public class BufferInputStream {
-
-}
