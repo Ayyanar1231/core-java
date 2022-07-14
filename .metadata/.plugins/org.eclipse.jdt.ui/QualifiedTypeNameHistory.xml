@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.io.FileOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.ObjectOutputStream"/>
-    <fullyQualifiedTypeName name="java.io.IOException"/>
-    <fullyQualifiedTypeName name="com.chainsys.collection.Emp"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Parameter"/>
     <fullyQualifiedTypeName name="java.lang.reflect.Field"/>
     <fullyQualifiedTypeName name="com.chainsys.calculater_interface.Calculator"/>
@@ -28,7 +24,6 @@
     <fullyQualifiedTypeName name="com.chainsys.hospitalproject.test.TestDoctor"/>
     <fullyQualifiedTypeName name="com.chainsys.hospitalproject.ui.DoctorUI"/>
     <fullyQualifiedTypeName name="com.chainsys.minproject.ui.EmployeeUi"/>
-    <fullyQualifiedTypeName name="java.util.Scanner"/>
     <fullyQualifiedTypeName name="com.chainsys.minproject.ui.DoctorUI"/>
     <fullyQualifiedTypeName name="com.chainsys.minproject.ui.AppointmentUI"/>
     <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
@@ -54,10 +49,15 @@
     <fullyQualifiedTypeName name="com.chainsys.minproject.commonutil.InvalidInputDataException"/>
     <fullyQualifiedTypeName name="com.chainsys.minproject.dao.AppointmentDao"/>
     <fullyQualifiedTypeName name="com.chainsys.minproject.commonutil.ExceptionManager"/>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
     <fullyQualifiedTypeName name="java.util.Enumeration"/>
-    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
     <fullyQualifiedTypeName name="com.chainsys.minproject.pojo.Employee"/>
     <fullyQualifiedTypeName name="com.chainsys.webapp.first.Employees"/>
     <fullyQualifiedTypeName name="com.chainsys.minproject.commonutil.Validator"/>
+    <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSessionBindingListener"/>
+    <fullyQualifiedTypeName name="javax.servlet.HttpConstraintElement"/>
+    <fullyQualifiedTypeName name="javax.servlet.http.HttpSessionBindingEvent"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="com.chainsys.ebbillpayment.CalculateBill"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,11 @@
+##Google iFrame
+
+Reason:
+
+1. url - https://developer.mozilla.org/en-Us/docs/Web/Http/Headers/X-Frame-options
+1. Http response contains Xframe option : SAMERORIGIN
+1. Every frame is consider as a browser. google wants to run in same frame
+
+```java code
+for newline -doublespace,
+```

@@ -9,7 +9,6 @@ import java.util.regex.Pattern;
 public class Validator {
 
 	public static boolean checkStringForParse(String data) throws InvalidInputDataException {
-		// TODO--This method is incomplete
 		boolean result = false;
 		int len = data.length();
 		for (int index = 0; index < len; index++) {

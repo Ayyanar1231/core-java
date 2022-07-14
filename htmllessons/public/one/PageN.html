@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Dom_A</title>
+<style>
+.green {
+	background-color: green
+}
+
+li.yellow {
+	background-color: yellow;
+}
+</style>
+</head>
+<body>
+	<div id="div1" class="green">Hello Javascript</div>
+	<div>
+		<h1>Furits</h1>
+		<ul>
+			<li class="yellow">Apple</li>
+			<li>Orange</li>
+			<li class="green">Mango</li>
+			<li>Grapes</li>
+			<li>Banana</li>
+		</ul>
+		<img src="Images/tiger.jpg" alt="tiger" width=200 height=200>
+		<div id="div2" class="yellow">
+			<input type="text" name="fname" placeholder="first name">
+		</div>
+	</div>
+	<!-- 	<script>
+	console.log("hello world");
+	</script> -->
+	<!-- <script>
+	var x = 234;
+	console.log(x);
+	var cities = {'capital':'chennai','native':'madurai','permanent':'tirchi','favourite':'salem'};
+	console.log(x);
+	</script -->
+	>
+	<script>
+		var divElement = document.getElementById("div1");
+		//divElement.innerHTML = "Hello June 2022";
+		divElement.innerText = "Hello June 2022";
+		var textElement = document.getElementById("fname");
+		console.log(textElement.value);
+		var listItems = document.getElementByTagName("li");
+		var itemLength = listItem.length;
+		for (var i = 0; i <= itemLength; i++) {
+			console.log(listItem[i].innerText);
+		}
+		listItem[0].innerText = "Samsung";
+		listItem[1].innerText = "Apple";
+		listItem[2].innerText = "Nokia";
+	</script>
+</body>
+</html>
